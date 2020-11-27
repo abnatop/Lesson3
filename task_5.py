@@ -12,7 +12,7 @@ exit_symbol = ''
 result = 0
 
 while exit_symbol != EXIT_CODE:
-    digits = input('Введите строку чисел, разделенных пробелом (или # для выхода): ')
+    digits = input(f'Введите строку чисел, разделенных пробелом (или {EXIT_CODE} для выхода): ')
     if EXIT_CODE in digits:
         digits = digits.replace(EXIT_CODE, '')
         exit_symbol = EXIT_CODE
