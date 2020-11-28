@@ -15,10 +15,10 @@
 # самостоятельная реализация
 CASE_OFFSET = 32
 
-def to_upper_first_ltr(text):
-    return chr(ord(text[0]) - CASE_OFFSET) + text[1:]
-
 def int_func(text):
+    def to_upper_first_ltr(text):
+        return chr(ord(text[0]) - CASE_OFFSET) + text[1:]
+
     text_words = text.split()
     for i in range(len(text_words)):
         text_words[i] = to_upper_first_ltr(text_words[i])
