@@ -13,9 +13,10 @@
 # print(int_func('some words here.'))
 
 # самостоятельная реализация
-CASE_OFFSET = 32
 
 def int_func(text):
+    CASE_OFFSET = 32
+
     def to_upper_first_ltr(text):
         return chr(ord(text[0]) - CASE_OFFSET) + text[1:]
 
